@@ -8,10 +8,10 @@
             background: #17141d;
             background: white;
             display: grid;
-            grid-template-columns: 300px;
+            grid-template-columns: 400px;
             grid-template-rows: 210px 60px 80px;
             grid-template-areas: "image" "text" "bottom";
-            font-family: roboto;
+            font-family: arial;
             border-radius: 18px;
             box-shadow: -1rem 0 3rem #000;
             text-align: center;
@@ -28,7 +28,7 @@
     
     .card-discription{
       grid-area: text;
-      font-family: roboto;
+      font-family: arial;
       margin-top: -10px;
     }
     
