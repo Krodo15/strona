@@ -11,19 +11,100 @@
     
 </head>
     <body>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..\img\mazda.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..\img\Chervrolet Corvette.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..\img\2023-chevrolet-corvette-z06-front-view.webp" class="d-block w-100" alt="...">
-          </div>
-        </div>
+      <div class="container">
+        <div class="row row-cols-xs-4 row-cols-sm-2 row-cols-md-4">
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img height="170px" weight="280px" src="..\img\border collie.webp" class="card-img-top" alt="...">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                Border collie
+              </button>
+          </div></div>
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img height="170px" weight="280px" src="..\img\husky.jpg" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+              Husky
+            </button>
+          </div></div>
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img height="170px" weight="280px" src="..\img\owczarek-niemiecki.jpg" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+              Owczarek niemiecki
+            </button>
+          </div></div>
+          <div class="col"><div class="card" style="width: 18rem;">
+            <img height="170px" weight="280px" src="..\img\shiba-inu.webp" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+              Shiba inu
+            </button>
+          </div></div>
+        </div></div>
+      
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Border collie</h5>
       </div>
+      <div class="modal-body">
+        Border collie – jedna z ras psów, należąca do grupy psów pasterskich i zaganiających, zaklasyfikowana do sekcji psów pasterskich (owczarskich). Typ wilkowaty. Podlega próbom pracy. Border collie ma mieć proporcjonalną budowę ciała, przy czym wygląd jego wskazuje na grację i doskonałą harmonię w połączeniu z odpowiednią masą ciała. Obecnie kształtują się coraz większe podziały w kwestii wzorca między psami przeznaczonymi do wystaw a użytkowymi. Te drugie charakteryzuje lżejsza budowa ciała, mniej obfita okrywa włosowa oraz wydłużony kształt głowy.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Husky</h5>
+      </div>
+      <div class="modal-body">
+        Husky syberyjski – jedna z ras psów, należąca do grupy szpiców i psów w typie pierwotnym, zaklasyfikowana do sekcji północnych psów zaprzęgowych. Zgodnie z klasyfikacją amerykańską, należy do grupy psów pracujących. Typ wilkowaty. Nie podlega próbom pracy. Husky syberyjski to pies silny umiarkowanie, zwarty, o sportowej sylwetce formatu skróconego prostokąta.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Owczarek niemiecki</h5>
+      </div>
+      <div class="modal-body">
+        Owczarek niemiecki – jedna z ras psów należąca do grupy psów pasterskich sklasyfikowana do sekcji psów pasterskich (owczarskich). Według klasyfikacji FCI podlega próbom pracy. Zaliczany do psów obronnych. Typ wilkowaty. Owczarek niemiecki powinien być psem żywiołowym, energicznym, inteligentnym, posłusznym i lojalnym. Szybko i chętnie się uczy, współpracuje. Wymaga od właściciela zapewnienia dużej ilości ruchu i zajęcia. Psy nieprawidłowo socjalizowane i źle wychowywane mogą stać się lękliwe, nerwowe lub agresywne. Owczarek niemiecki zwykle akceptuje inne zwierzęta, może jednak nie tolerować kotów, zwłaszcza jeśli nie był z nimi oswajany jako szczenię. Najwłaściwsze warunki lokalowe dla tej rasy to dom z ogrodem.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Shiba inu</h5>
+      </div>
+      <div class="modal-body">
+        Shiba-inu (jap. 柴犬) – jedna z sześciu ras psów japońskich, należąca do szpiców i psów w typie pierwotnym, zaliczona do sekcji szpiców azjatyckich i ras pokrewnych. Nie podlega próbom pracy. Zgodnie z klasyfikacją amerykańską należy do grupy psów pracujących. Shiba jest psem niezależnym, jednak lojalnym i przywiązanym do osób, które zdobędą jego zaufanie. Ma dobry kontakt z dziećmi, powinien jednak przebywać w domu tylko ze starszymi dziećmi, które traktują zwierzęta we właściwy sposób. Nie jest polecany dla rodzin z niemowlętami i małymi dziećmi. Wobec nieznajomych zwykle zachowuje dystans, jest nieufny. Łatwo przystosowuje się do życia w różnych warunkach, wymaga jednak regularnych ćwiczeń na smyczy lub na terenie zamkniętym. W przypadku braku odpowiedniej dawki ruchu posiada tendencję do niszczenia przedmiotów w domu. Jest bardzo zaborczy w stosunku do swoich zabawek, jedzenia i innych przedmiotów, które uznaje za swoją własność. W celu zapobiegnięcia wystąpienia negatywnych cech charakteru zalecana jest jak najwcześniejsza socjalizacja i trening psa, najlepiej przez wykwalifikowanego trenera.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
     </body>  
             
 </html>
