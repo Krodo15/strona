@@ -2,6 +2,7 @@
         .header {
           padding-top: 25px;
           padding-bottom: 25px;
+          background-image: "";
         }
         .first-column {
             background: green;
@@ -19,4 +20,10 @@
           background: green;
           border-width: 2px;
           color: white;
+        }
+        @media only screen and (min-width: 800px) {
+          .image {
+            width: 100%;
+           
+          }
         }
