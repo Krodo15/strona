@@ -1,0 +1,25 @@
+td {
+  border: 2px solid black;
+  border-style: outset;
+  background-color: rgb(57, 24, 146);
+  width: 300px;
+  height: 300px;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+.wygrana{
+  color: rgb(8, 197, 8);
+}
+.resetButton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: red;
+}
