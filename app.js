@@ -37,128 +37,130 @@ for(x=1; x<10 ; x++){
    win4 = p[1]+p[4]+p[7];
    win5 = p[2]+p[5]+p[8];
    win6 = p[3]+p[6]+p[9];
-   win7 = p[1]+p[5]+p[9];
-   win8 = p[3]+p[5]+p[7];
+   win8 = p[1]+p[5]+p[9];
+   win7 = p[3]+p[5]+p[7];
    console.log(win1);
    
    if(win1 == "xxx"){
-    console.log(wyn1) ;
-    if(wyn1 == "xxx"){
+    console.log(win1) ;
+   }
+    if(win1 == "xxx"){
         for(x=1 ; x<4 ; x++){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn2 == "xxx"){
+    if(win2 == "xxx"){
         for(x=4 ; x<7 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
+            console.log("x: "+x);
+            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>x</div>' ;
         }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        document.getElementById("info").innerHTML = '<div style="font-size:70px";>WYGRAŁY KRZYŻYKI</div>' ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn3 == "xxx"){
+    if(win3 == "xxx"){
         for(x=7 ; x<10 ; x++){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn4 == "xxx"){
+    if(win4 == "xxx"){
         for(x=1 ; x<8 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn5 == "xxx"){
+    if(win5 == "xxx"){
         for(x=2 ; x<9 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn6 == "xxx"){
+    if(win6 == "xxx"){
         for(x=3 ; x<10 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn7 == "xxx"){
+    if(win7 == "xxx"){
         for(x=3 ; x<8 ; x+= 2){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn8 == "xxx"){
+    if(win8 == "xxx"){
         for(x=1 ; x<10 ; x+= 4){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KRZYŻYKI</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
 
 
 
 
 
-    if(wyn1 == "ooo"){
+    if(win1 == "ooo"){
         for(x=1 ; x<4 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
+            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>o</div>' ;
         }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        document.getElementById("info").innerHTML = '<div style="font-size:70px";>WYGRAŁY KÓŁKA</div>' ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn2 == "ooo"){
+    if(win2 == "ooo"){
         for(x=4 ; x<7 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
+            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn3 == "ooo"){
+    if(win3 == "ooo"){
         for(x=7 ; x<10 ; x++){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn4 == "ooo"){
+    if(win4 == "ooo"){
         for(x=1 ; x<8 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn5 == "ooo"){
+    if(win5 == "ooo"){
         for(x=2 ; x<9 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn6 == "ooo"){
+    if(win6 == "ooo"){
         for(x=3 ; x<10 ; x+= 3){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn7 == "ooo"){
+    if(win7 == "ooo"){
         for(x=3 ; x<8 ; x+= 2){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
-    if(wyn8 == "ooo"){
+    if(win8 == "ooo"){
         for(x=1 ; x<10 ; x+= 4){
             document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
         }
         document.getElementById("info").innerHTML = '<div style="font-size:70px;">WYGRAŁY KÓŁKA</div>' ;
-        tabela.removeEventListener("click",clickField) ;
+        table.removeEventListener("click",clickField) ;
     }
 
     if(remis == 9){
@@ -167,8 +169,8 @@ for(x=1; x<10 ; x++){
     }
 }
 
-reset.addEventListener("click",action) ;
-function action(e){
+resetButton.addEventListener("click",reset) ;
+function reset(e){
     
     document.getElementById("p1").innerHTML = "" ;
     document.getElementById("p2").innerHTML = "" ;
@@ -180,9 +182,9 @@ function action(e){
     document.getElementById("p8").innerHTML = "" ;
     document.getElementById("p9").innerHTML = "" ;
     document.getElementById("info").innerHTML = "";
-    tabela.addEventListener("click",clickField) ;
+    table.addEventListener("click",clickField) ;
     remis = 0 ;
     startPoint = "x" ;
 }
-} 
+
 
