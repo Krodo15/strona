@@ -1,11 +1,12 @@
 var startPoint = "x";
 var remis =  0;
 var p = [1,2,3,4,5] ;
-console.log(p[2]);
+var wygrana = []
 table.addEventListener("click", clickField);
 function clickField(e){
-    remis++;
+    
     if (e.target.innerHTML == ""){
+        remis++;
         e.target.innerHTML = startPoint;
         if (startPoint == "x"){
             startPoint = "o";
@@ -20,153 +21,57 @@ for(x=1; x<10 ; x++){
     p[x] = document.getElementById("p"+x).innerHTML;
 }
   
-   win1 = p[1]+p[2]+p[3];
-   win2 = p[4]+p[5]+p[6];
-   win3 = p[7]+p[8]+p[9];
-   win4 = p[1]+p[4]+p[7];
-   win5 = p[2]+p[5]+p[8];
-   win6 = p[3]+p[6]+p[9];
-   win8 = p[1]+p[5]+p[9];
-   win7 = p[3]+p[5]+p[7];
-   console.log(win1);
-   
-   if(win1 == "xxx"){
-    console.log(win1) ;
+   function getElementP(elem,what){
+       document.getElementById("p"+elem).innerHTML = '<div style="color:lime;">'+what+'</div>'
+       console.log (elem+" "+what)
    }
-    if(win1 == "xxx"){
-        for(x=1 ; x<4 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win2 == "xxx"){
-        for(x=4 ; x<7 ; x++){
-            console.log("x: "+x);
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px";><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win3 == "xxx"){
-        for(x=7 ; x<10 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win4 == "xxx"){
-        for(x=1 ; x<8 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win5 == "xxx"){
-        for(x=2 ; x<9 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win6 == "xxx"){
-        for(x=3 ; x<10 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win7 == "xxx"){
-        for(x=3 ; x<8 ; x+= 2){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win8 == "xxx"){
-        for(x=1 ; x<10 ; x+= 4){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">x</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KRZYŻYKI!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
+   function getResult(info){
+       document.getElementById("result").innerHTML = info;
+   }
+   function wygranaGry(x,kto,par1,par2,par3){
+    // x - unikalny identyfikator,
+    // jaka kofiguracja wygrywa,
+    // par1,par2,par3 - pola, które wygrywają
+    wygrana[x]=p[par1] + p[par2] + p[par3];
 
+    if (wygrana[x]== kto){
+        if (kto == "xxx"){
+            getElementP(par1,"x");
+            getElementP(par2,"x");
+            getElementP(par3,"x");
+            getResult('<div style="font-size:70px;color:white;">WYGRAŁY KRZYŻYKI</div>');
+            document.getElementById("resetButton").className = "visible resetButton";
+            table.removeEventListener("click",clickField)
+        }
+        if(kto == "ooo"){
+            getElementP(par1,"o")
+            getElementP(par2,"o")
+            getElementP(par3,"o")
+            getResult('<div style="font-size:70px;color:white;">WYGRAŁY KÓŁKA</div>');
+            document.getElementById("resetButton").className = "visible resetButton";
+            table.removeEventListener("click",clickField)
 
+        }
+        table.removeEventListener("click".clickField);
+        resetTable.disabled = false;
+            
+    }
+   }
+   
+wynik = []
+wynik[1] = "xxx";
+wynik[2] = "ooo";
 
-
-
-    if(win1 == "ooo"){
-        for(x=1 ; x<4 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px";><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win2 == "ooo"){
-        for(x=4 ; x<7 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime";>o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win3 == "ooo"){
-        for(x=7 ; x<10 ; x++){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win4 == "ooo"){
-        for(x=1 ; x<8 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win5 == "ooo"){
-        for(x=2 ; x<9 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win6 == "ooo"){
-        for(x=3 ; x<10 ; x+= 3){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win7 == "ooo"){
-        for(x=3 ; x<8 ; x+= 2){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px;"><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
-    if(win8 == "ooo"){
-        for(x=1 ; x<10 ; x+= 4){
-            document.getElementById("p"+x).innerHTML = '<div style="color:lime;">o</div>' ;
-        }
-        document.getElementById("info").innerHTML = '<div style="font-size:70px";><h1>WYGRAŁY KÓŁKA!!!</h1></div>' ;
-        table.removeEventListener("click",clickField) ;
-        document.getElementById("resetButton").className = "visible resetButton";
-    }
+for(x=1;x<3;x++){
+    wygranaGry(1,wynik[x],1,2,3);
+    wygranaGry(2,wynik[x],4,5,6);
+    wygranaGry(3,wynik[x],7,8,9);
+    wygranaGry(4,wynik[x],1,4,7);
+    wygranaGry(5,wynik[x],2,5,8);
+    wygranaGry(6,wynik[x],3,6,9);
+    wygranaGry(7,wynik[x],1,5,9);
+    wygranaGry(8,wynik[x],3,5,7);
+}
 
     if(remis == 9){
         document.getElementById("info").innerHTML = '<div style="font-size:70px";><h1>REMIS!!!</h1></div>' ;
@@ -175,17 +80,18 @@ for(x=1; x<10 ; x++){
     }
 }
 
-resetButton.addEventListener("click",reset) ;
-function reset(e){
+resetButton.addEventListener("click",resetTable) ;
+function resetTable(e){
      for(x=1 ;x< 10 ; x++ ){
         p[x] = document.getElementById("p"+x).innerHTML = "";
      }
+        
     document.getElementById("info").innerHTML = "";
-    document.getElementById("resetButton").className = "hide resetButton ";
+    document.getElementById("resetButton").className = "visible resetButton";
     table.addEventListener("click",clickField);
     startPoint = "x";
     remis = 0;
 
-}
 
+}
 

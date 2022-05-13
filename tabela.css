@@ -38,3 +38,9 @@ table{
 h1{
   text-align: center;
 }
+#resetButton{
+  margin: auto;
+  width: 30%;
+  border: 3px solid;
+  padding: 10px;
+}
