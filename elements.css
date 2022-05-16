@@ -1,20 +1,29 @@
+.checked{
+  position:relative;
+  background-color: rgb(0, 148, 7);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
 .container {
 	display: flex;
 }
 
-
+/*weight of element*/
 .dr {
 	text-align: right;
 	font-size:1vmin;
 }
 
-
+/*symbol name*/
 .symbol{
   font-size:2vmin;
   text-align: center
 }
 
-
+/*num of element*/
 .num_of_ele{
   position: absolute;
   left:0.1vmin;
@@ -26,7 +35,7 @@
 
 .green {
   position:relative;
-  background-color: lightgreen;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -36,7 +45,7 @@
 
 .dark_green {
   position:relative;
-  background-color: darkgreen;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -46,7 +55,7 @@
 
 .lime_green {
   position:relative;
-  background-color: #80ffd4;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -56,7 +65,7 @@
 
 .pink{
   position:relative;
-  background-color: #ff33bb;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -66,7 +75,7 @@
 
 .blue {
   position:relative;
-  background-color: lightblue;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -76,7 +85,7 @@
 
 .orange {
   position:relative;
-  background-color: #f7d076;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -86,7 +95,7 @@
 
 .dark_orange {
   position:relative;
-  background-color: #b35900;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -96,7 +105,7 @@
 
 .red {
   position:relative;
-  background-color:#ffb3b3 ;
+  background-color:grey ;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -106,7 +115,7 @@
 
 .dark_red {
   position:relative;
-  background-color:#992600 ;
+  background-color: grey ;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -116,7 +125,7 @@
 
 .yellow {
   position:relative;
-  background-color: #e6f776;
+  background-color: grey;
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -126,7 +135,7 @@
 
 .invis {
   position:relative;
-  background-color: lightgreen;
+  background-color: grey;
   opacity: 0;
   width: 5vw;
   height: 5vh;
