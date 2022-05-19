@@ -2,6 +2,11 @@ var pierwiastki = [] ;
 var y = 0 ;
 container = document.getElementsByClassName("symbol");
 
+function gameStart(e){
+  console.log(e.target.id);
+  randomElements();
+}
+
 function randomElements(){
   for(x = 0; x < container.length; x++){
     if(container[x].textContent != "DE" 
@@ -39,8 +44,3 @@ easy.addEventListener('click',gameStart);
 medium.addEventListener('click',gameStart);
 hard.addEventListener('click',gameStart);
 
-
-function gameStart(e){
-  console.log(e.target.id);
-  randomElements();
-}
