@@ -1,6 +1,16 @@
+#start{
+  margin-top: 15px;
+}
+#input{
+  background-color: aliceblue;
+  width: 20%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
 .checked{
   position:relative;
-  background-color: rgb(0, 148, 7);
+  background-color: rgb(42, 241, 142);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -35,7 +45,7 @@
 
 .green {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -45,7 +55,7 @@
 
 .dark_green {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -55,7 +65,7 @@
 
 .lime_green {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -65,7 +75,7 @@
 
 .pink{
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -75,7 +85,7 @@
 
 .blue {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -85,7 +95,7 @@
 
 .orange {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -95,7 +105,7 @@
 
 .dark_orange {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -105,7 +115,7 @@
 
 .red {
   position:relative;
-  background-color:grey ;
+  background-color:rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -115,7 +125,7 @@
 
 .dark_red {
   position:relative;
-  background-color: grey ;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -125,7 +135,7 @@
 
 .yellow {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   width: 5vw;
   height: 5vh;
   padding: 2px;
@@ -135,7 +145,7 @@
 
 .invis {
   position:relative;
-  background-color: grey;
+  background-color: rgb(173, 173, 173);
   opacity: 0;
   width: 5vw;
   height: 5vh;
