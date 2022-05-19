@@ -1,7 +1,10 @@
-.start{
-  margin-top: 15px;
-  /* display: none; */
+.hide{
+  display: none;
 }
+.show{
+  display: block;
+}
+
 #tlo{
   display: block;
   background-color: rgb(203, 228, 250);
@@ -182,7 +185,7 @@ input[type=text] {
   width: 100%;
 }
 input[type=submit] {
-  background-color: DodgerBlue;
+  background-color: rgb(132, 194, 255);
   color: #cdeefd;;
 }
 .autocomplete-items {
@@ -208,7 +211,7 @@ input[type=submit] {
 }
 .autocomplete-active {
   /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important;
+  background-color: rgb(133, 194, 255) !important;
   color: #cdeefd;
 }
 textarea:focus, input:focus{ outline: none; }

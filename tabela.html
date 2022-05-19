@@ -254,11 +254,11 @@
  
 
 <!--Make sure the form has the autocomplete function switched off:-->
-<form class="d-flex justify-content-center" autocomplete="off" action="/action_page.php">
-	<div class="autocomplete" style="width:300px;">
-	  <input id="myInput" type="text" name="myCountry" placeholder="Wpisz pierwiastki">
+<div class="d-flex justify-content-center m-3">
+	<button id="startButton" type="button" class="btn btn-secondary " data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+	  Start
+	</button>
 	</div>
-  </form>
   
   <!-- Modal -->
   <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -277,16 +277,16 @@
   </div>
   </div>
 
+  <div id="input" class="easy d-flex justify-content-center ">
+	<form id="inputAuto" autocomplete="off" action="/action_page.php" class="hide">
+		<div class="autocomplete" style="width:300px;">
+		  <input id="myInput" type="text" name="myCountry" placeholder="">
+		</div>
+	  </form>
+  </div>
 
-  <script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
-></script>
 	<script src="../app.js"></script>
     <script src="../pierwiastki.js"></script>
 	<script src="../autocomplete.js"></script>
-	<script>
-		autocomplete(document.getElementById("myInput"), data);
-		</script>
 </body>
 </html>

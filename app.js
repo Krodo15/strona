@@ -5,6 +5,8 @@ container = document.getElementsByClassName("symbol");
 function gameStart(e){
   console.log(e.target.id);
   randomElements();
+  document.getElementById("startButton").className = "hide"
+  document.getElementById("inputAuto").className = "show"
 }
 
 function randomElements(){
