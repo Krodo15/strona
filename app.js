@@ -4,6 +4,8 @@ var answer = "";
 var y = 0 ;
 var k=0 ;
 var point = 0;
+var timer = 0;
+var countDownDate = new Date().getTime()+1000*120;
 container = document.getElementsByClassName("symbol");
 for(x = 0; x < container.length; x++){
   if(container[x].textContent != "DE"
@@ -31,7 +33,9 @@ elementChosed.push(randomNumber);
     }
   }
   else{
-
+    document.getElementById("statictic").className = "show btn btn-warning"
+    document.getElementById("inputAuto").className = "hide"
+    clearInterval(timer);
   }
 }
 
@@ -44,10 +48,15 @@ medium.addEventListener('click',gameStart);
 hard.addEventListener('click',gameStart);
 
 function gameStart(e){
+  countDownDate = new Date().getTime()+1000*120;
+  timer = setInterval(countDown,1000);
   randomElements();
   document.getElementById("startButton").className = "hide"
   document.getElementById("inputAuto").className = "show"
   document.getElementById("resetButton").className = "show btn btn-info"
+  document.getElementById("statistic").className = "show"
+  document.getElementById("time").className = "show"
+  statistic.innerHTML = "<h1>Wynik: "+point+"</h1>"
 }
 
 function checkQuestion(event){
@@ -58,11 +67,13 @@ function checkQuestion(event){
       randomElement.classList.add("goodAnswer");
       randomElement.classList.add("okres");
       point++;
+      countDownDate += 10*1000;
     }
     else {
       randomElement.classList.remove("checked");
       randomElement.classList.add("badAnswer");
       randomElement.classList.add("okres");
+      countDownDate -= 10*1000;
     }
     statistic.innerHTML = "<h1>Wynik: "+point+"</h1>"
     randomElements();
@@ -82,11 +93,29 @@ function resetGame(e){
   document.getElementById("startButton").className = "btn btn-secondary show";
   document.getElementById("inputAuto").className = "hide";
   document.getElementById("resetButton").className = "hide";
+  document.getElementById("statistic").className = "hide";
+  document.getElementById("time").className = "hide";
   point = 0;
-  statistic.innerHTML = "<h1>Wynik: "+point+"</h1>"
+  clearInterval(timer);
+  countDownDate = new Date().getTime()+1000*120;
+  timer = setInterval(countDown,1000);
+  statistics.innerHTML = "";
 }
 
-
-
-
+function countDown(){
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = minutes + ":" + seconds + "";
+    
+  if (distance < 0) {
+    clearInterval(timer);
+    document.getElementById("demo").innerHTML = "Game over";
+    resetGame();
+  }
+} 
 

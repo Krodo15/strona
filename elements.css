@@ -1,11 +1,13 @@
 .checked{
   position:relative;
-  background-color: rgb(218, 218, 2);
+  background-color: rgb(255, 255, 77);
   width: 5vw;
   height: 5vh;
   padding: 2px;
   margin: 2px;
   float: left;
+  color: black;
+  border-radius: 10px;
 }
 .container {
 	display: flex;
@@ -35,54 +37,16 @@
 
 .green {
   position:relative;
-  background-color: rgb(192, 187, 187);
+  background-color: rgb(207, 207, 207);
   width: 5vw;
   height: 5vh;
   padding: 2px;
   margin: 2px;
   float: left;
+  color: black;
+  border-radius: 10px;
 }
 
-
-.dark_orange {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.red {
-  position:relative;
-  background-color:rgb(192, 187, 187) ;
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.dark_red {
-  position:relative;
-  background-color: rgb(192, 187, 187) ;
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
-
-.yellow {
-  position:relative;
-  background-color: rgb(192, 187, 187);
-  width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  margin: 2px;
-  float: left;
-}
 
 .invis {
   position:relative;
@@ -93,6 +57,7 @@
   padding: 2px;
   margin: 2px;
   float: left;
+  border-radius: 10px;
 }
 
 p.gone{
@@ -108,7 +73,7 @@ p.gone{
 * { box-sizing: border-box; }
 body {
   font: 16px Arial;
-  background-image: url("../img/chemia.jpg");
+  background-image: url("../img/tlo.png");
 }
 .autocomplete {
   /*the container must be positioned relative:*/
@@ -171,6 +136,8 @@ textarea:focus, input:focus{ outline: none; }
   padding: 2px;
   margin: 2px;
   float: left;
+  color: black;
+  border-radius: 10px;
 }
 .badAnswer{
   position:relative;
@@ -180,4 +147,47 @@ textarea:focus, input:focus{ outline: none; }
   padding: 2px;
   margin: 2px;
   float: left;
+  color: black;
+  border-radius: 10px;
+}
+.purple{
+  position: relative;
+  background-color: rgb(243, 171, 250);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+  color: black;
+  border-radius: 10px;
+}
+
+.countdown{
+  margin-top: 53px;
+  position: absolute;
+  margin-left: 43%;
+  background-color: rgb(243, 171, 250);
+  height: 100px;
+  width: 330px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+
+}
+#statistic{
+  position: absolute;
+  margin-top: 53px;
+  margin-left: 25%;
+  background-color: rgb(243, 171, 250);
+  height: 100px;
+  width: 250px;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  padding: 24px;
+}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
 }
