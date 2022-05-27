@@ -17,14 +17,39 @@
 	<script type="text/javascript" src="js/popper.min.js"></script> 
 	<!-- Bootstrap core JavaScript --> 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" href="elements.css">
 </head>
 
 
 <body background="../img/chemia.jpg" style="background-color:black;">
 
-	<div id="statistic" class="text-center"><h1>Wynik: 0</h1></div>
 
-	<div id="time" class="hide">
+	<div id="rewards" class="hide">
+		<div class="grid-container">
+			<div></div>
+			<div class="grid-item left" style="position: relative;"><a class="prev" onclick="plusSlides(-1)"><img class="imgleft" src="../img/arrow_left.png" alt=""></a></div>
+			<div class="grid-item midle">
+			<div class="slideshow-container">
+			</div>
+		</div>
+		<div class="grid-item right" style="position: relative;">
+			<a class="next" onclick="plusSlides(1)"><img class="imgright" src="../img/arrow_right.png" alt="prawo"></a>
+		</div>
+		<div></div>
+	</div>
+		<div class="grid-stopka">
+			<div></div>
+			<div class="grid-item-long">
+			</div>
+			<div></div>
+		</div>
+	</div>
+
+
+
+	<div id="statistic"></div>
+
+	<div id="time">
 		<div class="countdown"><p id="demo"></p></div>
 				</div>
 
@@ -296,5 +321,6 @@
   <script src="../app.js"></script>
   <script src="../pierwiastki.js"></script>
   <script src="../autocomplete.js"></script>
+  <script src="../slider.js"></script>
   </body>
   </html>
